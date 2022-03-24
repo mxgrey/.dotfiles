@@ -1,0 +1,392 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "F4", // key to press to activate command
+        "command": "rust-analyzer.toggleInlayHints"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.files.saveAs"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "-workbench.action.files.saveAs"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "-workbench.action.files.saveLocalFile",
+        "when": "remoteFileDialogVisible"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-notebook.cell.executeAndInsertBelow",
+        "when": "notebookCellListFocused"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-search.action.openInEditor",
+        "when": "hasSearchResult && searchViewletFocus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-debug.openBreakpointToSide",
+        "when": "breakpointsFocused"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-editor.action.selectAllMatches",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-jupyter.runcurrentcellandaddbelow",
+        "when": "editorTextFocus && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+enter",
+        "command": "toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "-editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.files.saveAll"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeGroup",
+        "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "alt+up",
+        "command": "-notebook.cell.moveUp",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+up",
+        "command": "-history.showPrevious",
+        "when": "historyNavigationBackwardsEnabled && historyNavigationWidget"
+    },
+    {
+        "key": "alt+up",
+        "command": "-scm.forceViewPreviousCommit",
+        "when": "scmRepository"
+    },
+    {
+        "key": "alt+pageup",
+        "command": "-scrollPageUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "-showPrevParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-notebook.cell.copyUp",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "-notebook.cell.moveDown",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+down",
+        "command": "-history.showNext",
+        "when": "historyNavigationForwardsEnabled && historyNavigationWidget"
+    },
+    {
+        "key": "alt+down",
+        "command": "-showNextParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "alt+down",
+        "command": "-scm.forceViewNextCommit",
+        "when": "scmRepository"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+alt+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+right",
+        "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+down",
+        "command": "-workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+up",
+        "command": "-workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+e 3",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "ctrl+e 2",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.closeEditorsAndGroup"
+    },
+    {
+        "key": "ctrl+end",
+        "command": "-notebook.focusBottom",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+end",
+        "command": "-cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+end",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+shift+pagedown",
+        "command": "-workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "key": "ctrl+shift+pageup",
+        "command": "-workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+right",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+left",
+        "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-workbench.action.terminal.scrollUp",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "workbench.action.increaseViewHeight"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "workbench.action.decreaseViewHeight"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "workbench.action.moveEditorToAboveGroup"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-debug.renameWatchExpression",
+        "when": "watchExpressionsFocused"
+    },
+    {
+        "key": "f2",
+        "command": "-debug.setVariable",
+        "when": "variablesFocused"
+    },
+    {
+        "key": "f2",
+        "command": "-remote.tunnel.label",
+        "when": "tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
+    },
+    {
+        "key": "f2",
+        "command": "-workbench.action.terminal.renameInstance",
+        "when": "terminalHasBeenCreated && terminalTabsFocus && terminalTabsSingularSelection || terminalProcessSupported && terminalTabsFocus && terminalTabsSingularSelection"
+    },
+    {
+        "key": "f2",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    }
+]

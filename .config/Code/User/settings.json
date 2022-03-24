@@ -1,0 +1,158 @@
+{
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "[rust]": {
+        "editor.tabSize": 4
+    },
+    "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorCustomizations": {
+        "editor.foreground": "#f3f3f3",
+        "editor.background": "#000000",
+        "editorGutter.background": "#101010"
+    },
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.navigationScope": "editorGroup",
+    "window.titleBarStyle": "custom",
+    "window.customMenuBarAltFocus": false,
+    "editor.rulers": [80],
+    "files.eol": "\n",
+    "python.showStartPage": false,
+    "editor.tabSize": 2,
+    "editor.fontSize": 16,
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "editor.tokenColorCustomizations": {
+        "strings": "#ff7778",
+        "textMateRules": [
+            {
+                "name": "Property Name",
+                "scope": [
+                    "support.type.property-name"
+                ],
+                "settings": {
+                    "foreground": "#f3f3f3"
+                }
+            },
+            {
+                "name": "Constants and Literals",
+                "scope": [
+                    "constant.language",
+                    "constant.numeric",
+                    "constant.character",
+                    "constant.other"
+                ],
+                "settings": {
+                    "foreground": "#ffa7ff"
+                }
+            },
+            {
+                "name": "Keywords and Tags",
+                "scope": [
+                    "entity.name.tag",
+                    "punctuation.definition.tag",
+                    "keyword",
+                    "storage.type.class",
+                    "storage.type.built-in"
+                ],
+                "settings": {
+                    "foreground": "#ffff55"
+                }
+            },
+            {
+                "name": "Class and Type Names",
+                "scope": [
+                    "entity.name.scope-resolution",
+                    "entity.name.type"
+                ],
+                "settings": {
+                    "foreground": "#55ff55"
+                }
+            },
+            {
+                "name": "Attributes",
+                "scope": [
+                    "entity.other.attribute-name"
+                ],
+                "settings": {
+                    "foreground": "#9891ff"
+                }
+            },
+            {
+                "name": "CMake Dereferences",
+                "scope": [
+                    "storage.source.cmake"
+                ],
+                "settings": {
+                    "foreground": "#ffa24b",
+                }
+            },
+            {
+                "name": "Comments",
+                "scope": [
+                    "comment"
+                ],
+                "settings": {
+                    "foreground": "#008f8f"
+                }
+            }
+        ]
+    },
+    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "variable.mutable": {
+                "underline": false,
+                "italic": true
+            },
+            "parameter.mutable": {
+                "underline": false,
+                "italic": true
+            },
+            "selfKeyword.mutable": {
+                "underline": false,
+                "italic": true
+            },
+            "method.mutable": {
+                "underline": false,
+                "foreground": "#ffdcbb"
+            },
+            "string": "#ff7778",
+            "class": "#55ff55",
+            "type": "#55ff55",
+            "enum": {
+                "foreground": "#00ffb3",
+                "bold": true
+            },
+            "enumMember": "#3bffc4",
+            "keyword": "#ffff55",
+            "comment": "#008f8f",
+            "number": "#ffa7ff",
+            "macro": {
+                "foreground": "#9891ff",
+                "bold": true
+            },
+            "lifetime": "#afff65"
+        }
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "diffEditor.wordWrap": "off",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true,
+        "**/target/debug/**": true,
+        "**/target/release/**": true,
+        "**/target/rls/**": true
+    },
+    "rust-analyzer.inlayHints.enable": false,
+    "rust-analyzer.completion.autoimport.enable": false,
+    "grunt.autoDetect": "on",
+    "jake.autoDetect": "on",
+    "gulp.autoDetect": "on",
+    "editor.wordWrap": "off"
+}

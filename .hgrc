@@ -1,0 +1,6 @@
+[ui]
+username = Michael X. Grey <grey@openrobotics.org>
+ignore = ~/.hgignore
+
+[extensions]
+prompt = ~/.hgext/prompt.py

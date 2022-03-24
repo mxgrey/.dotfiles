@@ -1,0 +1,21 @@
+[user]
+	email = grey@openrobotics.org
+	name = Michael X. Grey
+	signingkey = 2CDC1F59E37FB54E
+[core]
+	excludesfile = ~/.gitignore
+[mergetool]
+	keepBackup = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	gpgsign = true
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[format]
+	signOff = true
+[gpg]
+	program = gpg2

@@ -1,0 +1,63 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+format = """
+$status $all[\\[$time\\]](199) $username$hostname$directory
+[└────────\\$](199) $character
+"""
+
+[status]
+disabled = false
+symbol = ""
+format = """[$symbol$status]($style)
+"""
+
+[character]
+success_symbol = "[▶](199)"
+error_symbol = "🔥"
+
+[time]
+format = "[$time](223)"
+disabled = false
+
+[directory]
+truncation_length = 100
+truncate_to_repo = false
+style = "bold 121"
+
+[git_branch]
+format = "[$symbol$branch]($style)"
+style = "227"
+
+[git_status]
+format = "( [\\($all_status$ahead_behind\\)]($style)) "
+modified = "*"
+untracked = "%"
+conflicted = "!"
+style = "227"
+
+[username]
+show_always = true
+format = "[$user]($style)"
+style_user = "199"
+
+[hostname]
+ssh_only = false
+format = "[@$hostname]($style)"
+style = "199"
+
+[cmd_duration]
+min_time = 1_000
+style = "87"
+
+[rust]
+format = " [$symbol($version)]($style) "
+symbol = "🦀"
+
+[package]
+format = " [$symbol$version]($style) "
+symbol = "📦"
+
+[cmake]
+format = " [$symbol($version )]($style) "
+style = "bold 87"
