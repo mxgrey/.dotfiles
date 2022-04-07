@@ -50,11 +50,21 @@
                     "entity.name.tag",
                     "punctuation.definition.tag",
                     "keyword",
-                    "storage.type.class",
-                    "storage.type.built-in"
+                    "keyword.control",
+                    "storage.type",
+                    "storage.modifier"
                 ],
                 "settings": {
                     "foreground": "#ffff55"
+                }
+            },
+            {
+                "name": "Reference",
+                "scope": [
+                    "storage.modifier.reference.cpp"
+                ],
+                "settings": {
+                    "foreground": "#f3f3f3"
                 }
             },
             {
