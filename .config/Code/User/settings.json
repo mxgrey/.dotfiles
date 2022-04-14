@@ -51,6 +51,9 @@
                     "entity.name.tag",
                     "punctuation.definition.tag",
                     "keyword",
+                    "keyword.control",
+                    "storage.type",
+                    "storage.modifier",
                     "storage.type.class",
                     "storage.type.built-in",
                     "storage.type.function",
@@ -61,6 +64,15 @@
                 ],
                 "settings": {
                     "foreground": "#ffff55"
+                }
+            },
+            {
+                "name": "Reference",
+                "scope": [
+                    "storage.modifier.reference.cpp"
+                ],
+                "settings": {
+                    "foreground": "#f3f3f3"
                 }
             },
             {
@@ -155,7 +167,7 @@
         "**/target/release/**": true,
         "**/target/rls/**": true
     },
-    "rust-analyzer.inlayHints.enable": true,
+    "rust-analyzer.inlayHints.enable": false,
     "rust-analyzer.completion.autoimport.enable": false,
     "grunt.autoDetect": "on",
     "jake.autoDetect": "on",
