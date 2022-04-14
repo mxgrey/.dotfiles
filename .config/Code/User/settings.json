@@ -38,7 +38,8 @@
                     "constant.language",
                     "constant.numeric",
                     "constant.character",
-                    "constant.other"
+                    "constant.other",
+                    "storage.type.string"
                 ],
                 "settings": {
                     "foreground": "#ffa7ff"
@@ -51,7 +52,12 @@
                     "punctuation.definition.tag",
                     "keyword",
                     "storage.type.class",
-                    "storage.type.built-in"
+                    "storage.type.built-in",
+                    "storage.type.function",
+                    "variable.language.special.self",
+                    "keyword.control.flow",
+                    "keyword.operator.logical.python",
+                    "keyword.control.import"
                 ],
                 "settings": {
                     "foreground": "#ffff55"
@@ -149,7 +155,7 @@
         "**/target/release/**": true,
         "**/target/rls/**": true
     },
-    "rust-analyzer.inlayHints.enable": false,
+    "rust-analyzer.inlayHints.enable": true,
     "rust-analyzer.completion.autoimport.enable": false,
     "grunt.autoDetect": "on",
     "jake.autoDetect": "on",
