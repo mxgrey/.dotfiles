@@ -172,5 +172,6 @@
     "grunt.autoDetect": "on",
     "jake.autoDetect": "on",
     "gulp.autoDetect": "on",
-    "editor.wordWrap": "off"
+    "editor.inlayHints.enabled": false,
+    "editor.bracketPairColorization.enabled": false
 }
