@@ -17,7 +17,6 @@
     "editor.rulers": [80],
     "files.eol": "\n",
     "python.showStartPage": false,
-    "editor.tabSize": 2,
     "editor.fontSize": 16,
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     "editor.tokenColorCustomizations": {
@@ -172,5 +171,11 @@
     "grunt.autoDetect": "on",
     "jake.autoDetect": "on",
     "gulp.autoDetect": "on",
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "off",
+    "editor.bracketPairColorization.enabled": false,
+    "cmake.configureOnOpen": true,
+    "files.exclude": {
+        "**/target": true
+    },
+    "editor.inlayHints.enabled": false
 }
