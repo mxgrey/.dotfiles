@@ -1,8 +1,20 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "F4", // key to press to activate command
-        "command": "rust-analyzer.toggleInlayHints"
+        "key": "F4",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args": {
+            "id": "toggle_inlay_hints",
+            "value": [
+                {
+                    "editor.inlayHints.enabled": "on"
+                },
+                {
+                    "editor.inlayHints.enabled": "off"
+                }
+            ]
+        }
     },
     {
         "key": "ctrl+alt+s",
@@ -403,5 +415,32 @@
         "key": "ctrl+shift+alt+[",
         "command": "-jupyter.extendSelectionByCellAbove",
         "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "-editor.action.refactor",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "-rerunSearchEditorSearch",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "-workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+        "when": "inQuickOpen && inRecentFilesPicker"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "editor.action.rename"
     }
 ]

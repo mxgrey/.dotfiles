@@ -166,16 +166,14 @@
         "**/target/release/**": true,
         "**/target/rls/**": true
     },
-    "rust-analyzer.inlayHints.enable": false,
     "rust-analyzer.completion.autoimport.enable": false,
     "grunt.autoDetect": "on",
     "jake.autoDetect": "on",
     "gulp.autoDetect": "on",
-    "editor.wordWrap": "off",
     "editor.bracketPairColorization.enabled": false,
     "cmake.configureOnOpen": true,
     "files.exclude": {
         "**/target": true
     },
-    "editor.inlayHints.enabled": false
+    "editor.inlayHints.enabled": "off"
 }
