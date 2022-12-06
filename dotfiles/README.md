@@ -78,3 +78,11 @@ curl -sS https://starship.rs/install.sh | sh
 #### vscode
 
 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+
+#### [Rust](https://www.rust-lang.org/tools/install)
+
+#### bat
+
+```bash
+sudo apt install bat
+```
