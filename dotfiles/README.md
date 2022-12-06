@@ -57,7 +57,6 @@ Add `signingkey` field to `user` section of `.gitconfig`, e.g.:
 Use `#gitignore` to avoid committing this key.
 Committing the key is not a security hazard, but every computer has its own value so committing them would make version control painful.
 
-
 ### Other things to install
 
 #### Fish
