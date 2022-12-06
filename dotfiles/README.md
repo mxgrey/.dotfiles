@@ -40,3 +40,19 @@ dotfiles commit -sam "Update gterminal preferences"
 ```bash
 dotfiles push origin main
 ```
+
+### Setting up keys
+
+Set up [ssh keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) and [gpg keys](https://docs.github.com/en/authentication/managing-commit-signature-verification).
+
+Add `signingkey` field to `user` section of `.gitconfig`, e.g.:
+
+```
+[user]
+	email = grey@openrobotics.org
+	name = Michael X. Grey
+	signingkey = A67E0623A5E76D6C #gitignore
+```
+
+Use `#gitignore` to avoid committing this key.
+Committing the key is not a security hazard, but every computer has its own value so committing them would make version control painful.

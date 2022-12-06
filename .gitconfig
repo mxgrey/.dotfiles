@@ -1,7 +1,6 @@
 [user]
 	email = grey@openrobotics.org
 	name = Michael X. Grey
-	signingkey = A67E0623A5E76D6C #gitignore
 [core]
 	excludesfile = ~/.gitignore
 [mergetool]

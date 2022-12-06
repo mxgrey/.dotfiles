@@ -1,1 +1,1 @@
-.gitignore filter=hashgitignore
+**/.gitconfig filter=hashgitignore
