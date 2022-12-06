@@ -3,3 +3,4 @@
 *.autosave
 **/.vscode/**
 __pycache__
+.dotfiles

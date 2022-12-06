@@ -1,7 +1,7 @@
 [user]
 	email = grey@openrobotics.org
 	name = Michael X. Grey
-	signingkey = 2CDC1F59E37FB54E
+	signingkey = A67E0623A5E76D6C #gitignore
 [core]
 	excludesfile = ~/.gitignore
 [mergetool]
@@ -20,4 +20,7 @@
 [format]
 	signOff = true
 [gpg]
-	program = gpg2
+	program = gpg
+[filter "hashgitignore"]
+	clean = "sed '/#gitignore$/d'"
+	smudge = cat
