@@ -23,6 +23,9 @@ dotfiles checkout
 
 ### Installing gnome-terminal settings
 
+* [Download Hack Nerd Font](https://www.nerdfonts.com/font-downloads)
+* [Install it](https://itsfoss.com/install-fonts-ubuntu/)
+
 ```bash
 cat ~/dotfiles/gterminal.preferences | dconf load /org/gnome/terminal/
 ```
