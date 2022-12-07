@@ -172,6 +172,7 @@
     "gulp.autoDetect": "on",
     "editor.bracketPairColorization.enabled": false,
     "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/.vscode/build",
     "files.exclude": {
         "**/target": true
     },
