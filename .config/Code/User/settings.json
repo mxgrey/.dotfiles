@@ -177,5 +177,6 @@
         "**/target": true
     },
     "editor.inlayHints.enabled": "off",
-    "sync.gist": "4cd50d614e71a729260c9a7617ae6451"
+    "sync.gist": "4cd50d614e71a729260c9a7617ae6451",
+    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono'"
 }
